@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Use Of Required</title>
+  </head>
+  <body>
+    <table align="center" cellpadding="10">
+      <form>
+        <tr>
+          <td>
+            <label for="Name">Name</label>
+          </td>
+          <td>
+            <input type="text" name="Name" id="Name" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <lable for="Mobile No.">Mobile No.</lable>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="Mobile No."
+              id="Mobile No."
+              pattern="[0-9]{10}"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <lable for="Date">Date</lable>
+          </td>
+          <td>
+            <input type="date" name="Date" id="Date" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Address">Address</label>
+          </td>
+          <td>
+            <textarea name="Address" id="Address"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" name="submit" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
