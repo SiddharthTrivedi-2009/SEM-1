@@ -1,0 +1,7 @@
+*.pdf
+*.ppt
+*.pptx
+*.exe
+*.out
+*.o
+.vscode/
