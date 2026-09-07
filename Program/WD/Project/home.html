@@ -17,6 +17,9 @@
         .photo{ 
             height: 20%;
             width: 15%;
+            height:  425px;
+            width: 285px;
+            border-radius: 20px;
         }
         .header{
             background-color: lightpink;
@@ -35,6 +38,12 @@
         }
         img{
             border-radius: 20px;
+        }
+        .movie{
+            display: flex;
+        }
+        .detail{
+            margin-left: 15px;
         }
     </style>
 </head>
@@ -56,10 +65,11 @@
           Web Designing Lab.
         </p>
          <a href="">Explore Full Movie Catalogue →</a>
-         <div class="movie">
+         
              <h2>Spotlight Featured Films</h2>
              <p>Hand-picked top-rated films featured for this week:</p>
-             <div>
+         <div class="movie">
+             <div class="detail">
              <a href="./fail.html" ><img class="photo" src="./fail.jpg"></a>
              <h3>12th Fail</h3>
              <p><b class="font">Genre:</b>Drama,Biography</p>
@@ -67,7 +77,7 @@
              <p><b class="font">Release Year:</b>2023</p>
              <p><b class="font">Rating:★</b>8.7/10</p>
              </div>
-             <div>
+             <div class="detail">
              <a href="./idiots.html" ><img class="photo" src="./idiots3.jpg"></a>
              <h3>3 Idiots</h3>
              <p><b class="font">Genre:</b>Comedy,Drama</p>
@@ -75,7 +85,7 @@
              <p><b class="font">Release Year:</b>2009</p>
              <p><b class="font">Rating:★</b>8.4/10</p>
              </div>
-             <div>
+             <div class="detail">
              <a href="dangal.html" ><img class="photo" src="./dangal.jpg"></a>
              <h3>Dangal</h3>
              <p><b class="font">Genre:</b>Drama,Sport,Biography</p>
@@ -83,7 +93,7 @@
              <p><b class="font">Release Year:</b>2016</p>
              <p><b class="font">Rating:★</b>8.3/10</p> 
              </div>
-             <div>
+             <div class="detail">
              <a href="./jaibhim.html" ><img class="photo" src="./jaibhim.webp"></a>
              <h3>Jai Bhim</h3>
              <p><b class="font">Genre:</b>Crime,Mystery,Drama</p>
@@ -91,7 +101,7 @@
              <p><b class="font">Release Year:</b>2021</p>
              <p><b class="font">Rating:★</b>8.6/10</p>
              </div>
-             <div>
+             <div class="detail">
              <a href="./sitaramam.html" ><img class="photo" src="./sitaramam.jpg"></a>
              <h3>Sita Ramam</h3>
              <p><b class="font">Genre:</b>Romance,Drama,Mystery</p>
@@ -136,7 +146,7 @@
             <ul>
              <li><a href="./action.html">Action Movies</a></li>
              <li><a href="./science.html">Science Fiction</a></li>
-             <li><a href="" >Crime & Mystery </a></li>
+             <li><a href="./crime.html" >Crime & Mystery </a></li>
              <li><a href="">Drama & Romance</a></li>
              <li><a href="">Animated Masterpieces</a></li>   
             </ul>
