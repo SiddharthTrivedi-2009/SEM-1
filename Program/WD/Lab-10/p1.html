@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 700px;
+            width: 800px;
+            position: relative;
+            background-color: yellow;
+        }
+        .box{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            animation-name: box;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-out;
+           
+        }
+        @keyframes box {
+            0%
+            {
+                left: 0;
+                top: 0;
+            }
+            25%
+            {
+                left: 700px;
+                top: 0;
+            }
+            50%
+            {
+                left: 700px;
+                top: 600px;
+            }
+            75%
+            {
+                left: 0;
+                top: 600px;
+            }
+            100%
+            {
+                left: 0;
+                top: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>
