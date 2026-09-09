@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #071a4a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #061536;
+    padding: 18px 30px;
+    box-shadow: 0 0 20px;
+}
+
+.header > a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header ul {
+    display: flex;
+    gap: 25px;
+    margin: 15px 0 0;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.header li a {
+    color: white;
+    font-weight: bold;
+}
+
+.header li a:hover {
+    color: #ffd45c;
+}
+
+.all {
+    width: 100%;
+    padding: 25px 20px 50px;
+}
+
+.all > h1 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin: 15px 0;
+    text-shadow: 0 0 12px #a8d5ff;
+}
+
+.all > p {
+    text-align: center;
+    color: #dcecff;
+    font-size: 16px;
+}
+
+.all > a {
+    display: block;
+    width: fit-content;
+    margin: 20px;
+    padding: 12px 25px;
+    background-color: #0878e8;
+    color: white
+    border-radius: 25px;
+    box-shadow: 0 0 15px;
+}
+
+.all > h2 {
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    font-size: 28px;
+    text-shadow: 0 0 12px ;
+}
+
+.all > p {
+    margin-bottom: 25px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.detail {
+    padding: 10px;
+    background-color: #0860c9;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+.detail:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 18px;
+}
+
+.detail a {
+    color: white;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.detail h3 {
+    color: white;
+    font-size: 19px;
+    margin: 12px ;
+}
+
+.detail p {
+    color: white;
+    font-size: 14px;
+    margin: 8px ;
+}
+
+.font {
+    color: #ffd45c;
+    font-weight: bold;
+}
+
+table {
+    width: 90%;
+    margin: 30px ;
+    background-color: #0b3470;
+    box-shadow: 0 0 20px #5daeff;
+}
+
+th {
+    background-color: #064b9e;
+    color: #ffd45c;
+    padding: 14px;
+    border: 1px solid #8bc8ff;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #8bc8ff;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #1055a0;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 22px;
+    text-align: center;
+    background-color: #050e22;
+    border-top: 2px solid white;
+    box-shadow: 0 -5px 20px #5daeff;
+    color: #dcecff;
+}
+

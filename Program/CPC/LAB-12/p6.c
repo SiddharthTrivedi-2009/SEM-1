@@ -5,11 +5,13 @@ int main(){
     printf("n=");
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        fac=1;
         for(j=1;j<=i;j++){
-            fac=fac*j;
+            i=i*j;
         }
-        sum=sum+((float)1/fac);
+        for(j=1;j<=i;j++){
+            j=j*j;
+        }
+        sum=i/(j*(i-j));
     }
     printf("%f",sum-1);
     return 0;

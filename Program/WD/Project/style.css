@@ -1,0 +1,56 @@
+body {
+        background-color: #0B132B;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .all {
+        background-color: #111D35;
+        display: flex;
+        gap: 30px;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px;
+      }
+      .photo {
+        width: 50%;
+        border-radius: 15xp;
+
+      }
+      .photo:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 25px;
+      }
+      .photo1 {
+        width: 35%;
+      }
+      .detail {
+        width: 25%;
+      }
+      .font {
+        color: red;
+      }
+      .photo2 {
+        width: 100%;
+        height: 75%;
+      }
+      .all1 {
+        display: flex;
+        gap: 25px;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 20px;
+        background-color: #111D35;
+      }
+      .all2 {
+        width: 30%;
+      }
+      .all2 img{
+        width: 200px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      .all2 img:hover {
+      transform: translate(-8px);
+      }
