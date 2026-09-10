@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .box{
+            background-color: red;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes box {
+            0% {top: 0;}
+            50% { top: 300px;}
+            100% {top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Bounce Ball</h1></div>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
