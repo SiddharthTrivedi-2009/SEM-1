@@ -51,6 +51,4 @@ body {
         object-fit: cover;
         border-radius: 15px;
       }
-      .all2 img:hover {
-      transform: translate(-8px);
-      }
+      

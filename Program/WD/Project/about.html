@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact - Movie Explorer</title>
+        <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #071a4a;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background-color: #061536;
+            padding: 18px 30px;
+            box-shadow: 0 0 20px #78baff;
+        }
+
+        .header > a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 15px 0 0;
+            padding: 0;
+        }
+
+        .header li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header li a:hover {
+            color: #ffd45c;
+        }
+
+        .about,
+        .contact {
+            width: 80%;
+            margin: 40px auto;
+            padding: 35px;
+            background-color: #111d35;
+            border: 2px solid #75baff;
+            border-radius: 20px;
+            box-shadow: 0 0 25px #5fa8ff;
+        }
+
+        .about h1,
+        .contact h1 {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            text-shadow: 0 0 15px #8ad5ff;
+        }
+
+        .about h2 {
+            color: #8ad5ff;
+            margin-top: 30px;
+        }
+
+        .about p,
+        .about li,
+        .contact p {
+            color: #dcecff;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .about li {
+            margin: 8px;
+        }
+
+        .contact {
+            max-width: 700px;
+        }
+
+        .contact label {
+            display: block;
+            color: #8ad5ff;
+            font-weight: bold;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #0b132b;
+            color: white;
+            border: 2px solid #5fa8ff;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            outline: none;
+            box-shadow: 0 0 12px #5fa8ff;
+        }
+
+        .contact button {
+            display: block;
+            margin: 25px auto 0;
+            padding: 12px 30px;
+            background-color: #5fa8ff;
+            color: #071a4a;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            box-shadow: 0 0 18px #8ad5ff;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding: 22px;
+            text-align: center;
+            background-color: #050e22;
+            border-top: 2px solid white;
+            box-shadow: 0 -5px 20px #5daeff;
+            color: #dcecff;
+        }
+
+        .footer p {
+            margin: 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <a href="home.html">🎬 Movie Explorer</a>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="movie details.html">Movie Details</a></li>
+            <li><a href="about.html">About & Contact</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="about">
+
+        <h1>About Movie Explorer</h1>
+
+        <p>
+            Movie Explorer is a simple movie information portal designed
+            for exploring popular Indian movies.
+        </p>
+
+        <h2>Our Website</h2>
+
+        <p>
+            This website provides information about movies from different
+            genres such as Action, Drama, Romance, Crime, Mystery and
+            Animation.
+        </p>
+
+        <h2>What You Can Find</h2>
+
+        <ul>
+            <li>Movie information</li>
+            <li>Genre and duration</li>
+            <li>Release year</li>
+            <li>Movie ratings</li>
+            <li>Story information</li>
+            <li>Trailers</li>
+            <li>Main characters and directors</li>
+        </ul>
+
+        <h2>Project Information</h2>
+
+        <p>
+            This website is created as a B.Tech 1st Year Web Designing
+            Lab Assignment using HTML and CSS.
+        </p>
+
+    </div>
+
+
+    <div class="contact">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Have a question or suggestion? Feel free to contact us.
+        </p>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Subject</label>
+            <input type="text" placeholder="Enter subject">
+
+            <label>Message</label>
+            <textarea rows="6" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+
+    <div class="footer">
+
+        <p>© 2026 Movie Explorer Portal</p>
+
+        <p>
+            Department of Computer Science & Engineering
+        </p>
+
+    </div>
+
+</body>
+
+</html>

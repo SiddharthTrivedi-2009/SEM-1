@@ -23,7 +23,7 @@ body {
 .header ul {
     display: flex;
     gap: 25px;
-    margin: 15px 0 0;
+    margin: 15px 0 0 0;
 }
 
 .header li {
@@ -98,7 +98,6 @@ body {
 }
 
 .detail:hover {
-    transform: translateY(-8px);
     box-shadow: 0 0 18px;
 }
 
@@ -163,4 +162,103 @@ table tr:hover {
     box-shadow: 0 -5px 20px #5daeff;
     color: #dcecff;
 }
+.all > div:last-of-type {
+    width: 90%;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: #111d35;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #78baff;
+}
+
+.all > div:last-of-type h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0 0 12px #78baff;
+    margin-bottom: 25px;
+}
+
+.all > div:last-of-type ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.all > div:last-of-type li {
+    background-color: #0860c9;
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #72b8ff;
+}
+
+.all > div:last-of-type li a {
+    display: block;
+    padding: 15px 22px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.all > div:last-of-type li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px white;
+}
+
+.all > div:last-of-type li a:hover {
+    color: #ffd45c;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+.search input {
+    width: 400px;
+    padding: 14px 18px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #111d35;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 15px #78baff;
+}
+
+.search input::placeholder {
+    color: #dcecff;
+}
+
+.search button {
+    padding: 14px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #0860c9;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px #78baff;
+}
+
+.search button:hover {
+    box-shadow: 0 0 25px white;
+    transform: scale(1.05);
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 0 8px white;
+}
+
 
