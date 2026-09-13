@@ -1,18 +1,16 @@
 #include<stdio.h>
 int main(){
-    int n,i,fac,j;
-    float e,sum=1.0;
-    printf("n=");
+    int n,i,j,temp;
+    printf("Enter N=");
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        for(j=1;j<=i;j++){
-            i=i*j;
-        }
-        for(j=1;j<=i;j++){
-            j=j*j;
-        }
-        sum=i/(j*(i-j));
+      for(temp=0;temp<=n-i;temp++){
+        printf(" ");
+      }
+      for(j=1;j<=i;j++){
+        printf("* ");
+      }
+      printf("\n");
     }
-    printf("%f",sum-1);
     return 0;
 }
