@@ -5,42 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            background-color: rgb(178, 174, 174);
+        .main{
+            background-color: rgb(195, 192, 192);
         }
         .header{
-            background-color: rgb(51, 49, 49);
-            text-align: center;
+            display: flex;
+            background-color: rgb(56, 55, 55);
             padding: 20px;
         }
         .header a{
-            color: white;
-            margin-left: 10px;
             text-decoration: none;
+            color: white;
+            margin-left: 30px;
         }
-        .main h1{
+        .nav{
+            margin-left: 500px;
+        }
+        h1{
             text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+        }
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+            align-content: center;
+            text-align: center;
+        }
+        .book{
+            border: 2px solid black;
+            height: 600px;
+            width: 400px;
+            border-radius: 10px;
+            margin-left: 250px;
+        }
+        .top{
+            height:200px ;
+            background-color: grey;
+            position: relative;
+            bottom: 18px;
+            border-radius: 10px 10px 0 0;
+        }
+        .middle{
+            height: 170px;
+            background-color: white;
+            position: relative;
+            bottom: 20px;
+            align-content: center;
+        }
+        .bottom{
+            height: 230px;
+            border-radius: 0 0 10px 10px;
+            background-color: yellow;
+            position: relative;
+            bottom: 220px;
+        }
+        .group{
+            text-align: right;
+        }
+        .top h3{
+            background-color: black;
+            color: white;
+            width: fit-content;
+            position: relative;
+            bottom: 0.5px;
+            left: 20px;
+            border-radius: 5px;
+        }
+        .bottom p{
+            font-weight: bold;
+            font-size: 200px;
+            text-align: right;
+        }
+        .bottom h5{
+            color: yellow;
+            font-size: 18px;
+            position: relative;
+            transform: rotate(270deg);
+            bottom: 460px;
+            left: 50px;
+        }
+        .middle p{
+            font-weight: bold;
+            text-align: right;
+            font-size: 50px
+        }
+        .right h3{
+           padding: 20px;
+           font-size: 30px;
+        }
+        .right button{
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .footer{
+            background-color: rgb(56, 55, 55);
+            padding: 40px;
+            align-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        .footer p{
+            font-size: 20px;
+        }
+        .footer button{
+           background-color: orange;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            width: 400px; 
+        }
+        .group h4{
+            font-size: 40px;
+            position: relative;
+            bottom: 58px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="main">
         <div class="header">
+            <div class="nav">
             <a href="">The Book Series</a>
             <a href="">Testimonials</a>
-            <a href="">The Author</a>
+            <a href="">The Authors</a>
             <a href="">Free Resources</a>
+            </div>
         </div>
-        <div class="main">
-            <h1>You Don't Know JavaScript</h1>
+        <h1>You Don't Know JavaScript</h1>
+        <div class="container">
             <div class="left">
-
+                <div class="book">
+                    <div class="top">
+                        <h3>O'REILLY</h3>
+                        <div class="group">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum saepe in, voluptatibus delectus magni reprehenderit illo minima cum voluptate! Facilis officia sunt necessitatibus dolorem dolor fugiat reiciendis quis excepturi iusto!</p>
+                        <h5>SIDDHARTH</h5>
+                        <h4>Siddharth</h4>
+                        </div>
+                    </div>
+                    <div class="middle">
+                     <p>COMPLETE<br> SERIES</p>
+                    </div>
+                    <div class="bottom">
+                      <p>JS</p>
+                      <h5>You Don't Know</h5>
+                    </div>
+                </div>
             </div>
             <div class="right">
-                <h2>Don't just drift through JavaScript</h2>
-                
+             <h3> Don't Just Drift Through JavaScript</h3>
+             <h3>Understand How JavaScript Works</h3>
+             <h3>Start Your Journey Through The Bumpy Side Of JavaScript</h3>
+             <button>ORDER YOUR COPY NOW</button>
             </div>
+        </div>
+        <div class="footer">
+            <p>This First ebook in The Book is Absolutely Free</p>
+            <button>FIND OUT MORE ABOUT THIS OFFER</button>
         </div>
     </div>
 </body>

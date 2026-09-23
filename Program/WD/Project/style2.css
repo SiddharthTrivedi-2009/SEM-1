@@ -260,5 +260,25 @@ table tr:hover {
     letter-spacing: 2px;
     box-shadow: 0 0 8px white;
 }
+@media (max-width:600px;){
 
+.header{
+    justify-content: space-between;
+}
+
+
+
+table {
+    width: 600px;
+    margin: 30px ;
+    background-color: #0b3470;
+    box-shadow: 0 0 20px #5daeff;
+}
+
+.movie{
+    display: flex;
+    flex-direction: column;
+}
+    
+}
 
