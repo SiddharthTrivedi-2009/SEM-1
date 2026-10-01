@@ -7,6 +7,7 @@ int main(){
     printf("Enter Number Of Coloumn = ");
     scanf("%d",&n);
     int a[m][n];
+    if(n==m){
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
             scanf("%d",&a[i][j]);
@@ -29,5 +30,9 @@ int main(){
         }
         printf("\n");
     }
+}
+else {
+    printf("Invalid Input");
+}
     return 0;
 }
