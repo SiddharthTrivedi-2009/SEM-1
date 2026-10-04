@@ -260,25 +260,66 @@ table tr:hover {
     letter-spacing: 2px;
     box-shadow: 0 0 8px white;
 }
-@media (max-width:600px;){
-
-.header{
-    justify-content: space-between;
+.search button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
+@media (max-width: 600px) {
 
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
+    .header ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
 
-table {
-    width: 600px;
-    margin: 30px ;
-    background-color: #0b3470;
-    box-shadow: 0 0 20px #5daeff;
-}
+    .header li {
+        margin: 10px 0;
+    }
 
-.movie{
-    display: flex;
-    flex-direction: column;
-}
-    
+    .all {
+        width: 95%;
+        margin: auto;
+    }
+
+    .movie {
+        display: block;
+        width: 100%;
+    }
+
+    .detail {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 5px;
+    }
+
+    .footer {
+        text-align: center;
+        width: 100%;
+    }
 }
 
