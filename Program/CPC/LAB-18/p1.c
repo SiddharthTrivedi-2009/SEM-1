@@ -1,14 +1,13 @@
 #include<stdio.h>
-int main(){
-    int count=0,i;
-    char s1[100];
-    printf("Enter String\n");
-    gets(s1);
-    for(i=0;s1[i]!='\0';i++){
-        count++;
-    }
-    printf("Size Of String = %d",count);
-    return 0;
-
-
+void sum(int a,int b);
+void main(){
+    int a,b;
+    printf("Enter First Num for Addition");
+    scanf("%d",&a);
+    printf("Enter First Num for Addition");
+    scanf("%d",&b);
+    sum(a,b);
+}
+void sum(int a,int b){
+    printf("Sum = %d",a+b);
 }

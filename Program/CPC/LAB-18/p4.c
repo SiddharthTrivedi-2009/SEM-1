@@ -1,18 +1,23 @@
 #include<stdio.h>
-int main(){
-    int i,count=0;
-    char s1[100],s2[100];
-    printf("Enter First String\n");
-    gets(s1);
-    printf("Enter Second String\n");
-    gets(s2);
-    for(i=0;s1[i]!='\0';i++){
-        count++;
+void temp(int a,int b,int c);
+void main(){
+    int a,b,c;
+    printf("Enter First Value\n");
+    scanf("%d",&a);
+    printf("Enter Second Value\n");
+    scanf("%d",&b);
+    printf("Enter Third Value\n");
+    scanf("%d",&c);
+    temp(a,b,c);
+}
+void temp(int a,int b,int c){
+    if(a>b && a>c){
+        printf("MAX = %d",a);
     }
-    for(i=0;s2[i]!='\0';i++){
-        s1[i+count]=s2[i];
+    if(b>a && b>c){
+        printf("MAX = %d",b);
     }
-    s1[i+count]='\0';
-    puts(s1);
-    return 0;
+    else{
+      printf("MAX = %d",c);  
+    }
 }
