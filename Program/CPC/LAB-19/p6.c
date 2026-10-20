@@ -17,5 +17,5 @@ void charcter(char s[],char a,char b){
             s[i]=b;
         }
     }
-    puts(s); 
+    puts(s);
 }

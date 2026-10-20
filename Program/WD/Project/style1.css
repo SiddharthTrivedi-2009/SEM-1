@@ -10,6 +10,11 @@ body {
     margin: 30px 0;
     font-size: 35px;
 }
+#heading{
+    animation-name: floatupdown;
+    animation-duration: 5;
+    animation: floatupdown 5 5 ;
+}
 
 .content {
     display: flex;
@@ -50,4 +55,12 @@ body {
 .font {
     color: #ff7043;
     font-weight: bold;
+}
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-12px); 
+    }
 }

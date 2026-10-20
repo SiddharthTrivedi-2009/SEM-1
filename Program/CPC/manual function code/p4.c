@@ -1,3 +1,4 @@
+//strncat()
 #include<stdio.h>
 int main(){
     int i,count=0;

@@ -1,3 +1,4 @@
+// strcmp()
 #include<stdio.h>
 int main(){
     int count1=0,count2=0,i,temp=1;
