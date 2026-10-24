@@ -1,139 +1,115 @@
 <!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="text-center my-2">
-                <img src="data:image/jpeg;base64,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"
-                    class="rounded" alt="..." height="100px" width="120px" />
-            </div>
-            <p class="h3 text-center">Checkout Form</p>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus libero
-                ratione.</p>
-        </div>
-        <div class="row mt-5">
-            <div class="col-9">
-              <div class="h3">Billing Address</div>
-            <div class="row">
-                <div class="col">
-                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                    <input class="form-control" type="text" placeholder="Enter Your First Name" aria-label="default input example">
+<html lang="en"
+l for="exampleFormControlInput1" class="form-label">Last Name</label>
+                        <input class="form-control" type="text" placeholder="Enter Your Last Name"
+                            aria-label="default input example">
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                    <input class="form-control" type="text" placeholder="Enter Your Last Name" aria-label="default input example">
+                <label for="exampleFormControlInput1" class="form-label mt-3">Username</label>
+                <div class="input-group">
+                    <div class="input-group-text" id="basic-addon1">@</div>
+                    <input type="text" class="form-control " placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
-            </div>
-            <label for="exampleFormControlInput1" class="form-label mt-3">Username</label>
-            <div class="input-group">
-                <div class="input-group-text" id="basic-addon1">@</div>
-                <input type="text" class="form-control " placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="mt-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email">
-              </div>
-              <div class="mt-3">
-                <label for="exampleFormControlInput1" class="form-label">Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Address">
-              </div>
-              <div class="mt-3">
-                <label for="exampleFormControlInput1" class="form-label">Address 2</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Address">
-              </div>
-            <div class="row mt-3">
-                <div class="col-5">
-                    <label for="exampleFormControlInput1" class="form-label">Country</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>choose....</option>
-                        <option value="1">India</option>
-                        <option value="2">America</option>
-                        <option value="3">Australia</option>
-                      </select>
+                <div class="mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Your Email">
                 </div>
-                <div class="col-4">
-                    <label for="exampleFormControlInput1" class="form-label">State</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>choose....</option>
-                        <option value="1">Gujrat</option>
-                        <option value="2">Maharastra</option>
-                        <option value="3">M.P.</option>
-                      </select>
+                <div class="mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Your Address">
                 </div>
-                <div class="col-3">
-                    <label for="exampleFormControlInput1" class="form-label">Zip</label>
-                <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                <div class="mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Address 2</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Your Address">
                 </div>
-            </div>
-            <hr>
-            <div class="form-check mt-3">
-                <input class="form-check-input-danger" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">
-                  Shipping address is same as the billing address
-                </label>
-              </div>
-            <div class="form-check">
-                <input class="form-check-input-danger" type="checkbox" value="" id="checkDefault">
-                <label class="form-check-label" for="checkDefault">
-                  Save this information for next time
-                </label>
-              </div>
-              <hr>
-            <div class="h3">
-                Payment
-            </div>
-            <div class="form-check mt-2">
-                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                <label class="form-check-label" for="radioDefault2">
-                  Credit Card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                <label class="form-check-label" for="radioDefault1">
-                  Debit Card
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                <label class="form-check-label" for="radioDefault1">
-                  PayPal
-                </label>
-              </div>
-            <div class="row mt-3">
-                <div class="col">
-                    <label for="exampleFormControlInput1" class="form-label">Name on card</label>
-                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
-                    <small class="text-body-tertiary">Full Name as displayed on card</small>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <label for="exampleFormControlInput1" class="form-label">Country</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>choose....</option>
+                            <option value="1">India</option>
+                            <option value="2">America</option>
+                            <option value="3">Australia</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="exampleFormControlInput1" class="form-label">State</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>choose....</option>
+                            <option value="1">Gujrat</option>
+                            <option value="2">Maharastra</option>
+                            <option value="3">M.P.</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleFormControlInput1" class="form-label">Zip</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="exampleFormControlInput1" class="form-label">Credit card number</label>
-                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
-                </div>  
-            </div>  
-            <div class="row mt-3">
-              <div class="col-3">
-                <label for="exampleFormControlInput1" class="form-label">Expiration</label>
-                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
-              </div>
-              <div class="col-3">
-                <label for="exampleFormControlInput1" class="form-label">CVV</label>
-                    <input class="form-control" type="text" placeholder="" aria-label="default input example">
-              </div>
+                <hr>
+                <div class="form-check mt-3">
+                    <input class="form-check-input-danger" type="checkbox" value="" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                        Shipping address is same as the billing address
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input-danger" type="checkbox" value="" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                        Save this information for next time
+                    </label>
+                </div>
+                <hr>
+                <div class="h3">
+                    Payment
+                </div>
+                <div class="form-check mt-2">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                        Credit Card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        Debit Card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        PayPal
+                    </label>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label">Name on card</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                        <small class="text-body-tertiary">Full Name as displayed on card</small>
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label">Credit card number</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <label for="exampleFormControlInput1" class="form-label">Expiration</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleFormControlInput1" class="form-label">CVV</label>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                    </div>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-primary w-100">Continue to checkout</button>
             </div>
-            <hr>
-            <button type="button" class="btn btn-primary w-100">Continue to checkout</button>
-            </div>
-            <div class="col">
+            <div class="col-3">
                 <div class=" d-flex flex-row">
                     <div class="h4 text-muted">Your Cart</div>
                     <div class="btn btn-dark rounded-3 ms-auto w-auto">3</div>
