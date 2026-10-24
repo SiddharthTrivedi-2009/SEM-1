@@ -1,11 +1,13 @@
-#include<stdio.h>
-int main(){
-    int n,i,fac=1;
+#include <stdio.h>
+int main()
+{
+    int n, i, fac = 1;
     printf("n=");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++){
-     fac=fac*i;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        fac = fac * i;
     }
-    printf("%d",fac);
+    printf("%d", fac);
     return 0;
 }

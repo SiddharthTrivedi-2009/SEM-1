@@ -1,17 +1,20 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
     char ch;
-    ch='A';
+    ch = 'A';
     printf("UPPERCASE\n");
-    while(ch<='Z'){
-        printf("%c",ch);
+    while (ch <= 'Z')
+    {
+        printf("%c", ch);
         ch++;
     }
     printf("\n");
-    ch='a';
-     printf("LOWERCASE\n");
-    while(ch<='z'){
-        printf("%c",ch);
+    ch = 'a';
+    printf("LOWERCASE\n");
+    while (ch <= 'z')
+    {
+        printf("%c", ch);
         ch++;
     }
     return 0;

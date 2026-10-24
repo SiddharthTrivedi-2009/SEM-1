@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n,i=1;
+int main()
+{
+    int n, i = 1;
     printf("Enter n =");
-    scanf("%d",&n);
+    scanf("%d", &n);
     do
     {
-     if (i % 2 != 0)
+        if (i % 2 != 0)
         {
 
             printf("%d\n", i);
         }
-        i = i + 1;   
-    } while (i<=n);
-  return 0;  
+        i = i + 1;
+    } while (i <= n);
+    return 0;
 }

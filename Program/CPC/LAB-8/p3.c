@@ -1,13 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n,i=0;
+int main()
+{
+    int n, i = 0;
     printf("entre n =");
-    scanf("%d",&n);
+    scanf("%d", &n);
     do
     {
-        printf("%d\n",i);
-        i=i+1;
-    } while (i<=n);
+        printf("%d\n", i);
+        i = i + 1;
+    } while (i <= n);
     return 0;
 }

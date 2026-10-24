@@ -1,13 +1,15 @@
-#include<stdio.h>
-int main(){
-    int x,y,mul=1,i;
+#include <stdio.h>
+int main()
+{
+    int x, y, mul = 1, i;
     printf("x=");
-    scanf("%d",&x);
+    scanf("%d", &x);
     printf("y=");
-    scanf("%d",&y);
-    for(i=1;i<=y;i++){
-       mul=mul*x;
+    scanf("%d", &y);
+    for (i = 1; i <= y; i++)
+    {
+        mul = mul * x;
     }
-    printf("%d",mul);
+    printf("%d", mul);
     return 0;
 }
