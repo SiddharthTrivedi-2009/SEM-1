@@ -8,7 +8,7 @@ void main()
 {
     int n, i, tempf = 0, tempi = 0;
     printf("How Many size you want to enter ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     struct size sum[n];
     for (i = 0; i < n; i++)
     {

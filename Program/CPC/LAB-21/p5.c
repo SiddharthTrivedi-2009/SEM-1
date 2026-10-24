@@ -6,9 +6,9 @@ struct time
 };
 void main()
 {
-    int n, i, temph = 0, tempm = 0, temps=0;
+    int n, i, temph = 0, tempm = 0, temps = 0;
     printf("How Many size you want to enter ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     struct time ttime[n];
     for (i = 0; i < n; i++)
     {
@@ -27,7 +27,7 @@ void main()
     }
     for (; temps >= 60;)
     {
-        if (temps>= 60)
+        if (temps >= 60)
         {
             tempm++;
             temps = temps - 60;
@@ -35,7 +35,7 @@ void main()
     }
     for (; tempm >= 60;)
     {
-        if (tempm>= 60)
+        if (tempm >= 60)
         {
             temph++;
             tempm = tempm - 60;

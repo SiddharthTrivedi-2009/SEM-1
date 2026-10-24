@@ -1,18 +1,20 @@
-#include<stdio.h>
-void temp(int* ,int* );
-void main(){
-    int a,b;
+#include <stdio.h>
+void temp(int *, int *);
+void main()
+{
+    int a, b;
     printf("Enter First Num \n");
-    scanf("%d",&a);
+    scanf("%d", &a);
     printf("Enter Second Num \n");
-    scanf("%d",&b);
-    temp(a,b);
+    scanf("%d", &b);
+    temp(a, b);
 }
-void temp(int* a,int* b){
+void temp(int *a, int *b)
+{
     int *temp;
-    temp=*a;
-    *a=*b;
-    *b=temp;
-    printf("a = %d\n",*a);
-    printf("b = %d",*b);
+    temp = *a;
+    *a = *b;
+    *b = temp;
+    printf("a = %d\n", *a);
+    printf("b = %d", *b);
 }

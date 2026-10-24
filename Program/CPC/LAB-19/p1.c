@@ -1,15 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 void fac(int n);
-void main(){
+void main()
+{
     int n;
     printf("N=");
-    scanf("%d",&n);
+    scanf("%d", &n);
     fac(n);
 }
-void fac(int n){
-    int i,fact=1;
-    for(i=1;i<=n;i++){
-        fact=fact*i;
+void fac(int n)
+{
+    int i, fact = 1;
+    for (i = 1; i <= n; i++)
+    {
+        fact = fact * i;
     }
-    printf("%d",fact);
+    printf("%d", fact);
 }
