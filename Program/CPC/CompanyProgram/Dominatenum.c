@@ -1,3 +1,8 @@
+// Dominant Number in an Array
+// A dominant number is a number whose frequency of occurrence in an array is strictly greater than the
+// count of unique elements present in that array.
+// You are given an integer array.
+// Your task is to identify and return all dominant numbers from the array.
 #include <stdio.h>
 void main()
 {
@@ -73,10 +78,9 @@ void main()
         {
             printf("Dominant Number: %d\n", i);
         }
-        if(b[i] <= count){
+        if (b[i] <= count)
+        {
             printf("No Dominant Number\n");
         }
     }
-
-    
 }

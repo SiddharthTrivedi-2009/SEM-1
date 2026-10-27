@@ -1,6 +1,11 @@
+// Find Maximum, Second Maximum, Minimum, and Second Minimum from an Array
+// This program takes an array of integers as input and identifies:
+// • the Maximum element,
+// • the Second Maximum element,
+// • the Minimum element, and
+// • the Second Minimum element.
+// The array must contain at least four distinct elements to determine all four values correctly.
 #include <stdio.h>
-#include <limits.h>
-
 int main()
 {
     int n, i;
@@ -14,7 +19,7 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    int max = a[0], secondmax = a[0], min = a[1], secondmin = a[1];
+    int max = a[0], secondmax = a[0], min = a[0], secondmin = a[0];
     for (i = 0; i < n; i++)
     {
         if (a[i] > max)
