@@ -6,7 +6,7 @@
 #include <stdio.h>
 void main()
 {
-    int n, i, j, count = 0;
+    int n, i, j, count = 0, temp = 0;
     printf("How Many Num You Want To Enter : \n");
     scanf("%d", &n);
     int a[n], b[10] = {0};
@@ -76,11 +76,19 @@ void main()
     {
         if (b[i] > count)
         {
-            printf("Dominant Number: %d\n", i);
+            temp = 1;
         }
         if (b[i] <= count)
         {
-            printf("No Dominant Number\n");
+            temp = 0;
         }
+    }
+    if (temp == 1)
+    {
+        printf("Dominant Number: %d\n", i);
+    }
+    if (temp == 0)
+    {
+        printf("No Dominant Number\n");
     }
 }
