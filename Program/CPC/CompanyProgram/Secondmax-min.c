@@ -19,7 +19,7 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    int max = a[0], secondmax = a[0], min, secondmin;
+    int max = a[0], secondmax = a[1], min, secondmin;
     for (i = 0; i < n; i++)
     {
         if (a[i] > max)

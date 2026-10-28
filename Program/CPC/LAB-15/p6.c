@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n, i, j;
+    int n, i, j, k;
     printf("n=");
     scanf("%d", &n);
     int a[n];
@@ -13,12 +13,20 @@ int main()
     {
         for (j = i + 1; j < n; j++)
         {
-            if (a[i] != a[j])
+            if (a[i] == a[j])
             {
-                printf("%d", a[i]);
-                break;
+                for (k = j; k < n - 1; k++)
+                {
+                    a[k] = a[k + 1];
+                }
+                n--;
+                j--;
             }
         }
+    }
+    for (i = 0; i < n; i++)
+    {
+        printf("%d", a[i]);
     }
     return 0;
 }
