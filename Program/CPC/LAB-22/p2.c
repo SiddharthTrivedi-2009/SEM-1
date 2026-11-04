@@ -4,12 +4,16 @@ int main()
     FILE *fa;
     char ch;
     int chars = 0, spaces = 0, tabs = 0, lines = 0;
-    fa = fopen("fa.text", "r");
+    fa = fopen("fa.txt", "w");
     if (fa == NULL)
     {
         printf("File Is not Created");
         return 1;
     }
+    fprintf(fa,"Siddharth\nTrivedi");
+    fclose(fa);
+    fa = fopen("fa.txt", "r");
+
     while ((ch = fgetc(fa)) != EOF)
     {
         chars++;
@@ -17,15 +21,12 @@ int main()
         {
             spaces++;
         }
-        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-        {
-            chars++;
-        }
-        if (ch == '\t')
+        
+        else if (ch == '\t')
         {
             tabs++;
         }
-        if (ch == '\n')
+        else if (ch == '\n')
         {
             lines++;
         }
